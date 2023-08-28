@@ -1,0 +1,102 @@
+.chats-screen {
+    padding: 0px 30px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.user-component:last-child img {
+    width: 95px;
+    height: 95px;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+} 
+
+.chats-screen a {
+    text-decoration: none;
+}
+
+.reply {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 25px ;
+    box-sizing: border-box;
+}
+
+.reply i {
+    opacity: 0.5;
+} 
+
+.reply_column:first-child {
+    width: 10%;
+}
+
+.reply_column:last-child {
+    width: 90%;
+    position: relative;
+}
+
+.reply input {
+    height: 35px;
+    width: 100%;
+    border: 1px solid gainsboro ;
+    border-radius: 10px;
+    padding-left: 10px;
+    transition: all 0.3s ease-in-out;
+
+}
+
+.reply_column:last-child i,
+.reply_column:last-child button {
+    position: absolute;
+    right: 0;
+    top: 10px;
+}
+
+.reply_column:last-child > i {
+    margin-right: 40px;
+    size: 40px;
+    top: 20px;
+    font-size: 25px;
+}
+
+.reply_column:last-child button {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: pink;
+    border: none;
+    margin-top: -5px;
+}
+
+.reply_column:last-child button i {
+    margin: 5px 9px;
+    opacity: 1;
+}
+
+.reply_column button:focus,
+.reply_column button:active {
+    outline: none;
+}
+
+.reply .reply__column:first-child,
+.reply_column i,
+.reply_column button {
+  transition: opacity 0.1s ease-in-out;
+}
+
+.reply:focus-within .reply__column:first-child,
+.reply:focus-within i,
+.reply:focus-within button {
+  opacity: 0;
+}
+
+.reply:focus-within input {
+  width: 93vw;
+  transform: translateX(-10%);
+}

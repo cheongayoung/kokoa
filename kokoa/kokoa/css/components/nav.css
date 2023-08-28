@@ -1,0 +1,38 @@
+.nav {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: transparent;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.nav_ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+.nav_link {
+    position: relative;
+    color: black;
+}
+
+@keyframes notificationAnimation {
+    0% {
+        transform: none;
+    }
+    50% {
+        transform: translateY(-7px) rotateZ(360deg);
+    }
+    100% {
+        transform: none;
+    }
+} 
+
+.nav__notification {
+    position: absolute;
+    left: 15px;
+    bottom: 18px;
+    animation: notificationAnimation 3s ease-in-out infinite;
+}

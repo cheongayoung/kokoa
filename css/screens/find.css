@@ -1,0 +1,137 @@
+
+
+.recommended-friends {
+    margin: 23px 8px;
+    padding: 5px 0px;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+}
+
+.recommended-friends_title {
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.recommended-friends span {
+    margin-top: 80px;
+    margin-bottom: 110px; 
+    display: block;
+    text-align: center;
+    align-items: center;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.5)
+}
+
+.open-chat {
+    margin: -20px 10px;
+}
+
+.open-chat_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    opacity: 0.8;
+}
+
+.open-chat_header span {
+    opacity: 0.6;
+}
+
+.open-post {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.open-post {
+    margin-top: -15px;
+}
+
+.open-post_title {
+    font-weight: bold;
+    font-size: 15px;
+    margin-bottom: 7px;
+}
+
+.open-post_hashtags {
+    text-transform: uppercase;
+    opacity: 0.6;
+}
+
+.open-post_members {
+    display: flex;
+    align-items: center;
+    margin-top: 7px;
+}
+
+.open-post_members img {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.open-post_members-count {
+    opacity: 0.5;
+    font-size: 14px;
+}
+
+.open-post_members .dividor {
+    width: 2px;
+    height: 15px;
+    margin: 0 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.open-post_members-status {
+    color: #ffb0e0;
+}
+
+.open-post_photo {
+    position: relative;
+}
+
+.open-post_photo img {
+    width: 130px;
+    height: 130px;
+    border-radius: 10px;
+    margin-top: 15px;
+    margin-right: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+}
+
+.open-post_heart-count {
+    background-color:  transparent;
+    color: white;
+    padding: 5px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    font-size: 14px;
+}
+
+.open-post_heart-count span {
+    margin-left: 5px;
+}
+
+@keyframes heartBeat {
+    0% {
+        color: white;
+        transform: none;
+    }
+    50% {
+        color: hotpink;
+        transform: scale(2);
+    }
+    100% {
+        color: #ffb0e0;
+    }
+}
+
+.open-post_heart-count:hover i {
+    will-change: transform;
+    animation: heartBeat 1s linear infinite;
+}

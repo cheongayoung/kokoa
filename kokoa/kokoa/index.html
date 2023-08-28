@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/style.css"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Disney Talk</title>
+    <style>
+        body {
+            background-image: url("./image/logo.webp");
+            background-size: 100%;
+            height: 100vh;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="status-bar">
+        <div class="status-bar_column">
+            <span>No Service</span>
+            <i class="fas fa-wifi fa-xs"></i>
+        </div>
+        <div class="status-bar_column">
+            <span>21:43</span>
+        </div>
+        <div class="status-bar_column">
+            <i class="fas fa-lock fa-xs"></i>
+            <span>100%</span>
+            <i class="fas fa-battery-full"></i>
+        </div>
+    </div>
+
+    <header class="welcome-header">
+        <h1 class="welcome-header_title">Welcome to Disney Talk</h1>
+        <p class="welcome-header_text">If you have a Disney Account,<br>
+            log in with your email or phone number.</p>
+    </header>
+
+    <form action="friends.html" method="get" id="login-form">
+        <input name="username" type="text" placeholder="Email or phone number">
+        <input name="password" type="text" placeholder="Password">
+        <button><a href="friends.html"></a>Log in</button>
+        <button>Sign up</button>
+        <button>Find Account or Password</button>
+    </form>
+
+    <div id="no-mobile">
+        <span>Your screen is too big</span>
+    </div>
+    
+    <script src="https://kit.fontawesome.com/cedad2f354.js" crossorigin="anonymous"></script>
+</body>
+</html>

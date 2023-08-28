@@ -1,0 +1,95 @@
+
+.friends-screen {
+    padding: 0px 30px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+}
+
+#friends-display-link {
+    text-align: center;
+    display: block;
+    background-color: #ffe4e1     ;
+    padding: 10px 0px;
+    font-size: 18px;
+    margin-bottom: 10px;
+    margin-top: -15px;
+}
+
+#friends-display-link span {
+    margin-bottom: 20px;
+}
+
+#friends-display-link i {
+    margin: 0px 15px;
+}
+
+.user-component:first-child img {
+    width: 100px;
+    height: 100px;
+    border-radius: 30px;
+} 
+
+.user-component_text {
+    display: block;
+    justify-content: space-between;
+    margin-left: 15px;
+    color: black;
+}
+
+.user-component_text> h4 {
+    font-size: 25px;
+    padding: 0px;
+}
+
+.friends-screen_channel {
+    margin-top: 25px;
+    border-top: 1.5px solid white;
+    padding-top: 15px;
+}
+
+.friends-screen_channel-header {
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+    color: rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+}
+
+.friends-screen_channel-header i {
+    margin-top: 10px;
+}
+
+.friends-screen_channel > .user-component {
+    margin-top: -20px;
+}
+
+.user-component_text h4 {
+    margin-top: 10px;
+    font-weight: lighter;
+}
+
+@keyframes hideSplashScreen {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+#splash-screen {
+    background-color: lavenderblush;
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 130px;
+    animation: hideSplashScreen 1s ease-in-out forwards;
+}
+

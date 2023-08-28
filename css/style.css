@@ -1,0 +1,24 @@
+@import "./components/status-bar.css";
+@import "./screens/login.css";
+@import "./components/nav.css";
+@import "./screens/friends.css";
+@import "./components/screen-header.css";
+@import "./components/user-component.css";
+@import "./screens/chats.css";
+@import "./screens/find.css";
+@import "./components/icon-row.css";
+@import "./screens/more.css";
+@import "./screens/setting.css";
+@import "./components/alt-header.css";
+@import "./screens/chat.css";
+@import "./components/badge.css";
+@import "./components/no-mobile.css";
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+
+body {
+    font-family:'Pacifico', cursive;
+    height: 500vh;
+    margin: 0; 
+    background-color: lavenderblush;
+}
